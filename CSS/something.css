@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px;
+    color: #EEEEEE;
+}
+.header{
+    top: 0;
+    width: 100%;
+    background-color: #222831;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid whitesmoke;
+}
+.header-logo p{
+    font-size: 30px;
+}
+.tambahan{
+    float: right;
+  
+    transition: 0.5s;
+    padding-right: 25px;
+    
+}
+.tambahan a{
+   line-height: 65px;
+   padding: 10px 20px;
+   background-color: #393E46;
+   display: inline-block;
+   text-decoration: none;
+   color: inherit;
+   border-radius: 30px;
+   margin: 20px 10px;
+
+}
+.header-logo{
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.main{
+    background-color: #393E46;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.hidden{
+    display: none;
+}
+.footer{
+    background-color: #222831;
+    border-top: 5px solid whitesmoke;
+    
+}
+.footer h1{
+    text-align: center;
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.tombol{
+    display: none;
+}
+.sidebar{
+    position: fixed;
+    width: 300px;
+    background-color: #222831;
+    z-index: 1;
+    padding: 25px 10px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+.sidebar a :hover{
+    background-color: #393E46;
+}
+.hidden{
+    display: none;
+}
+@media (max-width:700px) {
+    .header{
+        align-items: center;
+    }
+    .tambahan {
+        display: none;
+    }
+    .tombol{
+        border: none;
+        background:transparent ;
+        margin-right: 30px;
+        font-size: 30px;
+        padding: 5px;
+        display: block;
+    }
+    .main{
+        padding-top: 200px;
+    }
+    .introutama img{
+       width: 200px;
+       height: 200px;
+    }
+    .footer h1{
+        font-size: 20px;
+    }
+    
+}
