@@ -38,12 +38,12 @@ function authenticate(){
 	const username = document.getElementById("uname");
 	const password = document.getElementById("pass");
 	
-	if (username.value==="Gede Pradnyananda" && password.value==="gede123"){
+	if (username.value==="Nabila Fahrunnisa" && password.value==="nabila123"){
 		window.location= "something.html";
 		
 	}
 	else{
-		alert("KAMU BUKAN GEDE!!!");
+		alert("Salah!");
 	}
 }
 function toggleSidebar(){
