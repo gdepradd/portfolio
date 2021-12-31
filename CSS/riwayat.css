@@ -35,6 +35,10 @@ body{
    margin: 20px 10px;
 
 }
+tambahan a:hover {
+       background-color: #FFF;
+    color: black;
+}
 .header-logo{
     padding-left: 40px;
     padding-top: 10px;
