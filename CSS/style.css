@@ -1,152 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-body{
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0px;
-    color: #EEEEEE;
-}
-.header{
-    top: 0;
-    width: 100%;
-    background-color: #222831;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 5px solid whitesmoke;
-    z-index: 2;
-}
-.header-logo p{
-    font-size: 30px;
-}
-.tambahan{
-    float: right;
-  
-    transition: 0.5s;
-    padding-right: 25px;
-    
-}
-.tambahan a{
-   line-height: 65px;
-   padding: 10px 20px;
-   background-color: #393E46;
-   display: inline-block;
-   text-decoration: none;
-   color: inherit;
-   border-radius: 30px;
-   margin: 20px 10px;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  color: #eeeeee;
 }
+
+.header {
+  top: 0;
+  width: 100%;
+  background-color: #222831;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 5px solid whitesmoke;
+  z-index: 2;
+}
+
+.header-logo p {
+  font-size: 30px;
+}
+
+.tambahan {
+  float: right;
+  transition: 0.5s;
+  padding-right: 25px;
+}
+
+.tambahan a {
+  line-height: 65px;
+  padding: 10px 20px;
+  background-color: #393e46;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 30px;
+  margin: 20px 10px;
+}
+
 .tambahan a:hover {
-       background-color: #FFF;
-    color: black;
+  background-color: #fff;
+  color: black;
 }
-.header-logo{
-    padding-left: 40px;
-    padding-top: 10px;
+
+.header-logo {
+  padding-left: 40px;
+  padding-top: 10px;
 }
-.main{
-    background-color: #393E46;
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: 15px;
+
+.main {
+  background-color: #393e46;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 15px;
 }
-.introutama img{
-    border-radius: 50%;
-    height: 400px;
-    width: 400px;
-    margin-top: 80px;
-    align-self: center;
-    border: 10px solid white;
+
+.introutama img {
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  margin-top: 80px;
+  align-self: center;
+  border: 10px solid white;
 }
-.introutama{
-    display: flex;
-    flex-direction: column;
-   
+
+.introutama {
+  display: flex;
+  flex-direction: column;
 }
 
 .introutama h1 {
-    text-align: center;
+  text-align: center;
 }
-.intropenutup{
-    text-align: center;
+
+.intropenutup {
+  text-align: center;
 }
-.medsos{
-    text-align: center;
+
+.medsos {
+  text-align: center;
+  font-size: 30px;
+}
+
+.medsos a {
+  color: inherit;
+  margin: 20px 30px;
+  display: inline-block;
+}
+
+.footer {
+  background-color: #222831;
+  border-top: 5px solid whitesmoke;
+}
+
+.footer h1 {
+  text-align: center;
+  margin: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+p {
+  font-size: 20px;
+  margin: 0px;
+  line-height: 2;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.tombol {
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  width: 300px;
+  background-color: #222831;
+  z-index: 1;
+  padding: 130px 10px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+}
+
+.sidebar a :hover {
+  background-color: #393e46;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .header {
+    align-items: center;
+  }
+
+  .tambahan {
+    display: none;
+  }
+
+  .tombol {
+    border: none;
+    background: transparent;
+    margin-right: 30px;
     font-size: 30px;
-}
-.medsos a{
-    color: inherit;
-    margin:20px 30px;
-    display: inline-block;
-}
-.footer{
-    background-color: #222831;
-    border-top: 5px solid whitesmoke;
-    
-}
-.footer h1{
-    text-align: center;
-    margin: 0px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-p{
-    
+    padding: 5px;
+    display: block;
+  }
+
+  .main {
+    padding-top: 200px;
+  }
+
+  .introutama img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .footer h1 {
     font-size: 20px;
-    margin: 0px;
-    line-height: 2;
-    padding: 20px 50px;
-    text-align: center;
-}
-.tombol{
-    display: none;
-}
-.sidebar{
-    position: fixed;
-    width: 300px;
-    background-color: #222831;
-    z-index: 1;
-    padding: 130px 10px 30px;
-    display: flex;
-    flex-direction: column;
-}
-.sidebar a{
-    text-decoration: none;
-    color: white;
-    padding: 5px 10px;
-}
-.sidebar a :hover{
-    background-color: #393E46;
-}
-.hidden{
-    display: none;
-}
-@media (max-width:700px) {
-    .header{
-        align-items: center;
-    }
-    .tambahan {
-        display: none;
-    }
-    .tombol{
-        border: none;
-        background:transparent ;
-        margin-right: 30px;
-        font-size: 30px;
-        padding: 5px;
-        display: block;
-    }
-    .main{
-        padding-top: 200px;
-    }
-    .introutama img{
-       width: 200px;
-       height: 200px;
-    }
-    .footer h1{
-        font-size: 20px;
-    }
-    
+  }
 }
