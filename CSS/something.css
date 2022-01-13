@@ -35,7 +35,7 @@ body{
    margin: 20px 10px;
 
 }
-tambahan a:hover {
+.tambahan a:hover {
        background-color: #FFF;
     color: black;
 }
